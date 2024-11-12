@@ -1,6 +1,9 @@
 # install-age
+
 https://technotim.live/posts/install-age/
+
 AGE_LATEST_VERSION=$(curl -s "https://api.github.com/repos/FiloSottile/age/releases/latest" | grep -Po '"tag_name": "v\K[0-9.]+')
+
 AGE_LATEST_VERSION=$(curl -s "https://api.github.com/repos/FiloSottile/age/releases/latest" | grep -Po '"tag_name": "v\K[0-9.]+')
 
 tar xf age.tar.gz
@@ -27,6 +30,7 @@ sudo rm -rf /usr/local/bin/age-keygen
 domaine
 
 # Install Sops
+https://technotim.live/posts/secret-encryption-sops/
 
 SOPS_LATEST_VERSION=$(curl -s "https://api.github.com/repos/getsops/sops/releases/latest" | grep -Po '"tag_name": "v\K[0-9.]+')
 
